@@ -80,7 +80,7 @@ jobs:
             echo "Connected to EC2"
 
             sudo yum update -y
-            sudo yum install -y docker git
+            # sudo yum install -y docker git
             sudo systemctl start docker
             sudo systemctl enable docker
 
@@ -88,8 +88,8 @@ jobs:
 
             rm -rf demo-app
 
-            echo "Cloning repo..."
-            GIT_ASKPASS=true git clone https://github.com/rajatdevops1/demo-app.git
+            # echo "Cloning repo..."
+            # GIT_ASKPASS=true git clone https://github.com/rajatdevops1/demo-app.git
 
             cd demo-app
 
